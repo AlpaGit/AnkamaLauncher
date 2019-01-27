@@ -15,10 +15,10 @@
     "es",
     "it",
     "de"
-  ], 
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
-    "start" : "electron ."
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "dependencies": {
     "auto-launch": "5.0.5",
@@ -30,6 +30,7 @@
     "electron-settings": "3.2.0",
     "electron-updater": "2.19.1",
     "es6-promisify": "6.0.0",
+    "fs": "0.0.1-security",
     "fs-extra": "6.0.1",
     "imagesloaded": "4.1.4",
     "instill": "0.0.5",
