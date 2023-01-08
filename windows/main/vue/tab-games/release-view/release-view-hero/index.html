@@ -28,6 +28,7 @@
           }
 
           const heroPath = path.join(context.props.release.information.url.replace(/^file:\/\//, ''), 'hero')
+
           // Load template and styles
           const template = fs.readFileSync(path.join(heroPath, 'index.html'), 'utf8')
           const style = fs.readFileSync(path.join(heroPath, 'style.css'), 'utf8')
@@ -51,8 +52,9 @@
           }
 
           // Build component
-          delete require.cache[require.resolve(heroPath)]
-		  
+          if (require.cache.hasOwnProperty(require.resolve(heroPath))) {
+            delete require.cache[require.resolve(heroPath)]
+          }
           const component = require(heroPath)
 
           // Modify component data to inject hero scale

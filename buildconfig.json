@@ -1,9 +1,9 @@
 {
   "name": "zaap",
-  "productName": "Astrub Launcher",
+  "productName": "Ankama Launcher",
   "environment": "production",
   "cytrus": {
-    "repository": "http://localhost:9000/zaap/cytrus"
+    "repository": "https://ankama.akamaized.net/zaap/cytrus"
   },
   "autoupdater": {
     "url": "https://ankama.akamaized.net/zaap/installers"
@@ -12,7 +12,7 @@
     "dsn": "https://cfd88e06dc924b60bc4decd26e45bd96:1324c3e5113a47ef8809897e631a7932@sentry.io/196019"
   },
   "haapi": {
-    "url": "http://127.0.0.1:9000/"
+    "url": "https://haapi.ankama.com/"
   },
   "ankama": {
     "go": "https://go.ankama.com/"
